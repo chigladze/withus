@@ -1,0 +1,216 @@
+@font-face {
+  font-family: 'bpg_dejavu_sans';
+  src: url("../fonts/bpg_dejavu_sans.otf");
+}
+
+html {
+  font-size: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  line-height: 1.3;
+  font-family: 'bpg_dejavu_sans', 'Alfa Slab One', 'Archivo', 'Roboto', sans-serif;
+  color: #fff;
+}
+
+ul, ol {
+  list-style-type: none;
+}
+
+.navbar-nav .btn_reg {
+  border-radius: 30px;
+  border: 1px solid #000 !important;
+}
+
+a.navbar-brand.logo {
+  font-family: 'Alfa Slab One' !important;
+  font-size: 25px;
+}
+
+header .btn_choose {
+  border: none;
+  background-color: #ff8a6c;
+  border-radius: 25px;
+  color: #fff;
+}
+
+.header-section {
+  background-image: url("../imgs/header.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  min-height: 45rem;
+  background-position: center center;
+  padding-top: 50px;
+}
+
+.about-us {
+  margin-top: -90px;
+}
+
+.about-us .about-us_box {
+  width: 270px;
+  height: 270px;
+  -webkit-box-shadow: 0 0 10px 2px #8d8d8d;
+          box-shadow: 0 0 10px 2px #8d8d8d;
+  border-radius: 10px;
+  color: #3b3735;
+}
+
+.tours {
+  padding-top: 100px;
+}
+
+.tours h2 {
+  color: #3b3735;
+}
+
+.tours .tours-box {
+  -webkit-box-shadow: 6px 6px 6px 2px #8d8d8d;
+          box-shadow: 6px 6px 6px 2px #8d8d8d;
+  border-radius: 15px;
+  padding: 10px;
+  color: #3b3735;
+  max-height: 380px;
+  height: 100%;
+}
+
+.tours .tours_img {
+  border-radius: 15px;
+}
+
+.tours .tours_price {
+  padding: 5px;
+  background-color: #fff;
+  border-radius: 10px;
+  position: relative;
+  top: -10px;
+  color: #ff8a6c;
+}
+
+.tours .tours-btn {
+  border-radius: 15px;
+  border: none;
+  background-color: #e76f51;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.tours .tours-btn:hover {
+  padding-left: 40px !important;
+  padding-right: 40px !important;
+}
+
+.tours a {
+  color: #3b3735 !important;
+  text-decoration: none;
+}
+
+.tours .main-btn {
+  border-radius: 30px;
+  background-color: transparent;
+  border: 1px solid #e76f51;
+  color: #e76f51 !important;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.tours .main-btn:hover {
+  padding-left: 50px !important;
+  padding-right: 50px !important;
+  background-color: #e76f51;
+  color: #3b3735 !important;
+}
+
+.main-email {
+  background: #ffd2c6;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(255, 210, 198, 0.496236)), to(#ffd2c6));
+  background: linear-gradient(90deg, rgba(255, 210, 198, 0.496236) 0%, #ffd2c6 100%);
+  line-height: 1.5;
+  overflow: hidden;
+}
+
+.main-email h2, .main-email p {
+  color: #3b3735;
+}
+
+.main-email input[type=email] {
+  max-width: 600px;
+  width: 100%;
+  height: 50px;
+  border-radius: 15px;
+}
+
+.main-email input[type=email]:focus {
+  outline: none !important;
+  border: 1px solid #ced4da;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.main-email .fn-form {
+  position: relative;
+}
+
+.main-email .submit {
+  position: absolute;
+  right: 5px;
+  top: 28px;
+  font-size: 16px;
+  background: #e76f51;
+  color: #ffffff;
+  padding: 0px 16px;
+  height: 42px;
+  border: none;
+  border-radius: 15px;
+}
+
+.footer-section {
+  color: #3b3735 !important;
+  background: #ffd2c6;
+  margin-top: 10rem;
+}
+
+.footer-section a {
+  color: #3b3735 !important;
+  text-decoration: none;
+}
+
+.footer-section a:hover {
+  color: #3b3735 !important;
+}
+
+.footer-section .copyright-option {
+  background: #dbb5aa;
+  height: 10vh;
+}
+
+@media all and (max-width: 551px) {
+  .header-section {
+    min-height: 25rem;
+    padding-top: 10px;
+  }
+  .btn_choose {
+    margin-top: 10px !important;
+  }
+  .texton-header {
+    margin-top: 7px !important;
+  }
+  .about-us_responsive {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
+  }
+}
+/*# sourceMappingURL=styles.css.map */

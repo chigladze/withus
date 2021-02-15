@@ -1,0 +1,193 @@
+@import "_variables.scss";
+
+@font-face {
+    font-family: 'bpg_dejavu_sans';
+    src: url("../fonts/bpg_dejavu_sans.otf");
+}
+
+html {
+    font-size: 100%;
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    line-height: 1.3;
+    font-family: 'bpg_dejavu_sans', 'Alfa Slab One', 'Archivo', 'Roboto', sans-serif;;
+    color: #fff;
+}
+
+ul, ol {
+    list-style-type: none;
+}
+
+.navbar-nav {
+    .btn_reg {
+        border-radius: 30px;
+        border: 1px solid #000 !important;
+    }
+}
+
+a.navbar-brand.logo {
+        font-family: 'Alfa Slab One' !important;
+        // font-weight: bold;
+        font-size: 25px;
+}
+
+header {
+    .btn_choose {
+        border:  none;
+        background-color: $peach;
+        border-radius: 25px;
+        color: #fff;
+    }
+}
+
+.header-section {
+    background-image: url("../imgs/header.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    min-height: 45rem;
+    background-position: center center;
+    padding-top: 50px;
+}
+
+.about-us {
+    margin-top: -90px;
+    .about-us_box {
+       width: 270px;
+       height: 270px;
+       box-shadow: 0 0 10px 2px #8d8d8d;
+       border-radius: 10px;
+       color: $dark;
+    }
+}
+
+.tours {
+    padding-top: 100px;
+    h2 {
+        color: $dark;
+    }
+    .tours-box {
+        box-shadow: 6px 6px 6px 2px $gray;
+        border-radius: 15px;
+        padding: 10px;
+        color: $dark;
+        max-height: 380px;
+        height: 100%;
+    }
+    .tours_img {
+        border-radius: 15px;
+    }
+    .tours_price {
+        padding: 5px;
+        background-color: #fff;
+        border-radius: 10px;
+        position: relative;
+        top: -10px;
+        color: $peach;
+    }
+    .tours-btn {
+        border-radius: 15px;
+        border: none;
+        background-color: $lightred;
+        transition: .3s;
+            &:hover {
+                padding-left: 40px !important;
+                padding-right: 40px !important;
+            }
+    }
+    a {
+        color: $dark !important;
+        text-decoration: none;
+    }
+    .main-btn {
+        border-radius: 30px;
+        background-color: transparent;
+        border: 1px solid $lightred;
+        color: $lightred !important;
+        transition: .3s;
+            &:hover {
+                padding-left: 50px !important;
+                padding-right: 50px !important;
+                background-color: $lightred;
+                color: $dark !important;
+            }
+    }
+}
+
+.main-email {
+    background: rgb(255,210,198);
+    background: linear-gradient(90deg, rgba(255,210,198,0.4962359943977591) 0%, rgba(255,210,198,1) 100%);
+    line-height: 1.5;
+    overflow: hidden;
+    h2,p {
+        color: $dark;
+    }
+    input[type=email] {
+        max-width: 600px;
+        width: 100%;
+        height: 50px;
+        border-radius: 15px;
+           &:focus {
+                outline: none !important;
+                border: 1px solid #ced4da;;
+                box-shadow: none;
+           }
+    }
+    .fn-form {
+        position: relative;
+    }
+    .submit {
+        position: absolute;
+        right: 5px;
+        top: 28px;
+        font-size: 16px;
+        background: #e76f51;
+        color: #ffffff;
+        padding: 0px 16px;
+        height: 42px;
+        border: none;
+        border-radius: 15px;
+    }
+}
+
+.footer-section {
+    color: $dark !important;
+    background: rgb(255,210,198);
+    margin-top: 10rem;
+    a {
+        color: $dark !important;
+        text-decoration: none;
+           &:hover {
+               color: $dark !important;
+           }
+    }
+    .copyright-option {
+        background: rgb(219, 181, 170);
+        height: 10vh;
+    }
+}
+
+
+@media all and (max-width: 551px) {
+    .header-section {
+        min-height: 25rem;
+        padding-top: 10px;
+    }
+    .btn_choose {
+        margin-top: 10px !important;
+    }
+    .texton-header {
+        margin-top: 7px !important;
+    }
+    .about-us_responsive {
+        display: flex;
+        justify-content: center !important;
+    }
+}
